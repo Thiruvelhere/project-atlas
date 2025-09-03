@@ -23,7 +23,11 @@
   "type": "module",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "cross-env": "^10.0.0",
     "hardhat": "^2.22.5",
     "solidity-coverage": "^0.8.16"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.2"
   }
 }

@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "C:\\Users\\sibir\\project-atlas\\contracts\\votingSystem.sol": {
-      "lastModificationDate": 1755920576585,
-      "contentHash": "01e9fd144a4da387418db384c5fc92f8",
+      "lastModificationDate": 1756917745920,
+      "contentHash": "d81dc7d0e13066c4be0cb89b7a3bd563",
       "sourceName": "contracts/votingSystem.sol",
       "solcConfig": {
         "version": "0.8.20",
@@ -31,10 +31,10 @@
       },
       "imports": [],
       "versionPragmas": [
-        "^0.8.0"
+        "^0.8.20"
       ],
       "artifacts": [
-        "Voting"
+        "VotingFactory"
       ]
     }
   }
