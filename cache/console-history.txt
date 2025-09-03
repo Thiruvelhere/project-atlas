@@ -1,0 +1,54 @@
+await voting.getWinner();
+await voting.connect(user4).vote("Bob");
+voting = await ethers.getContractAt(  "Voting",  "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9");
+C:\Users\sibir\project-atlas>npx hardhat console --network localhostWelcome to Node.js v22.17.0.Type ".help" for more information.> const [deployer, user1, user2, user3, user4] = await ethers.getSigners();undefined> await voting.connect(user4).vote("Bob");Uncaught ReferenceError: voting is not defined    at REPL2:1:39>
+await voting.connect(user4).vote("Bob");
+const [deployer, user1, user2, user3, user4] = await ethers.getSigners();
+await voting.connect(user3).vote("Bob");
+await voting.getWinner();
+(await voting.totalVotesFor("Alice")).toString();
+await voting.connect(user3).vote("Bob");
+await vawait voting.connect(user3).vote("Bob");
+await voting.connect(user1).vote("Alice");
+await voting.getAllCandidates();
+voting = await ethers.getContractAt(  "Voting",  "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9");
+voting = await ethers.getContractAt(  "Voting",0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9);
+const [deployer, user1, user2, user3] = await ethers.getSigners();
+(await voawait voting.getWinner(); // should now return "Bob"
+await voting.connect(user3).vote("Bob");
+await voting.getWinner();
+(await voting.totalVotesFor("Alice")).toString();
+await voting.connect(user2).vote("Bob");
+await voting.getWinner();
+(await voting.totalVotesFor("Alice")).toString();
+await voting.connect(user1).vote("Alice");
+await voting.getAllCandidates();
+voting = await ethers.getContractAt(  "Voting",  "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0");
+const voting = await ethers.getContractAt(  "Voting",  "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0" );
+const voting = await ethers.getContractAt(  "Voting",0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0);
+const [deployer, user1, user2] = await ethers.getSigners();
+npx hardhat console --network localhost
+.exit
+const [deployer, user1, user2] = await ethers.getSigner
+v
+const [deployer, user1, user2] = await ethers.getSigner
+[deployer, user1, user2] = await ethers.getSigners
+let [deployer, user1, user2] = await ethers.getSigner
+let [deployer, user1, user2] = await ethers.getSigners();
+const [deployer, user1, user2] = await ethers.getSigners();
+const [deployer, user1, user2] = await ethers.getSigner
+votingContract.target
+votingContract.address
+const votingContract = await ethers.getContractAt(  "Voting",  "0x5FbDB2315678afecb367f032d93F642f64180aa3");
+const voting = await ethers.getContractAt(  "Voting",  "0x5FbDB2315678afecb367f032d93F642f64180aa3");
+const [deployer, user1, user2] = await ethers.getSigners();
+const [owner, addr1, addr2] = await ethers.getSigner
+voting.address
+const voting = await ethers.getContractAt(  "Voting",  "0x5FbDB2315678afecb367f032d93F642f64180aa3");
+Voting.address
+const Voting = await ethers.getContractAt(  "Voting",  "0x5FbDB2315678afecb367f032d93F642f64180aa3");
+);
+  "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+  "Voting",
+const Voting = await ethers.getContractAt(
+const [owner, addr1, addr2] = await ethers.getSigners();

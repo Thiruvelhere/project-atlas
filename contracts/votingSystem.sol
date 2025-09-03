@@ -38,4 +38,19 @@ contract Voting {
     function getAllCandidates() public view returns (string[] memory) {
         return candidates;
     }
+
+    function getWinner() public view returns (string memory winner) {
+        require(candidates.length > 0, "No candidates available");
+        uint256 highestVotes = 0;
+        string memory leadingCandidate = candidates[0];
+
+        for (uint256 i = 0; i < candidates.length; i++) {
+            if (votesReceived[candidates[i]] > highestVotes) {
+                highestVotes = votesReceived[candidates[i]];
+                leadingCandidate = candidates[i];
+            }
+        }
+
+        return leadingCandidate;
+    }
 }
