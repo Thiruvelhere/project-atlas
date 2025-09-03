@@ -1,3 +1,54 @@
+console.log("🏆 Winner:", candidates[winnerId]);
+const winnerId = await factory.getWinner(electionId);
+const talliesFinal = (await factory.getTallies(electionId)).map(t => t.toString());console.log("Final tallies:", talliesFinal);
+await factory.endElection(electionId);
+console.log("Tallies now:", talliesNow);
+console.log("Candidates:", candidates);
+const talliesNow = (await factory.getTallies(electionId)).map(t => t.toString());
+const candidates = await factory.getCandidates(electionId);
+await factory.connect(user4).vote(electionId, 2);   // Charlie
+await factory.connect(user3).vote(electionId, 1); 
+await factory.connect(user3).vote(await factory.connect(user4).vote(electionId, 2); // Charlie
+await factory.connect(user2).vote(electionId, 0); // Alice
+await factory.connect(user1).vote(electionId, 1); // Bob
+console.log("Election started:", now, "->", now + 3600);
+await factory.startElection(electionId, now, now + 3600);
+const now = Math.floor(Date.now() / 1000);
+ 3600);
+await fconsole.log("Election started:", now, "->", now +
+const now = Math.floor(Date.now() / 1000);
+console.log("Election ID:", electionId.toString());
+const electionId = (await factory.electionCount()) - 1n;
+await tx.wait();
+const tx = await factory.createElection("Student Council 2025", ["Alice","Bob","Charlie"], true);
+console.log("Factory deployed at:", factory.target);
+await factory.waitForDeployment();
+const factory = await Factory.deploy(admin.address);
+const Factory = await ethers.getContractFactory("VotingFactory");
+const [admin, user1, user2, user3, user4] = await ethers.getSigners();
+await factory.connect(user2).vote(electionId, 2); // vote for Charlie
+await factory.connect(user1).vote(electionId, 1); // vote for candidate index 1 (Bob)
+await factory.startElection(electionId, now, now + 3600);
+const now = Math.floor(Date.now() / 1000);
+const electionId = 0; 
+await factory.startElection(id, now, now + 3600);
+const now = Math.floor(Date.now()/1000);
+await network.provider.send("evm_mine");
+await network.provider.send("evm_increaseTime", [60]);
+await factory.connect(user1).vote(electionId, 1);
+console.log("Candidates:", candidates);
+const candidates = await factory.getCandidates(electionId);
+const electionId = 0;
+console.log("Total elections:", count.toString());
+const count = await factory.electionCount();
+const factory = await ethers.getContractAt(  "VotingFactory",  "0x5FbDB2315678afecb367f032d93F642f64180aa3");
+const factory = await ethers.getContractAt("VotingFactory",  "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+const [admin,user1,user2,user3] = await ethers.getSigners();
+const [admin, user1, user2, user3] = await ethers.
+factory = await ethers.getContractAt("VotingFactory", "0x5FbDB2315678afecb367f032d93F642f64180aa3");
+const [admin, user1, user2, user3] = await ethers.
+const [admin, user1, user2, user3] = await ethers.getSigners();
+const [admin, user1, user2, user3] = await ethers.
 await voting.getWinner();
 await voting.connect(user4).vote("Bob");
 voting = await ethers.getContractAt(  "Voting",  "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9");
