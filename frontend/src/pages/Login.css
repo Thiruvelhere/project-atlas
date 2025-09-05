@@ -1,0 +1,156 @@
+/* 🌙 Layout */
+.login-wrapper {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #37353E; /* Dark Charcoal */
+  min-height: 100vh;
+}
+
+/* Headings */
+.login-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #D3DAD9; /* Light Gray */
+}
+
+.login-subtext {
+  font-size: 1rem;
+  color: #D3DAD9;
+  opacity: 0.8;
+  margin-bottom: 2rem;
+}
+
+/* Cards Container */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Access Card */
+.access-card {
+  background: #44444E; /* Soft Dark Gray */
+  border-radius: 12px;
+  padding: 2rem;
+  width: 300px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.access-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Icons */
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.admin-icon {
+  color: #715A5A; /* Muted Brown */
+}
+
+.voter-icon {
+  color: #22c55e; /* Green accent */
+}
+
+/* Card Titles */
+.card-title {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  color: #D3DAD9;
+}
+
+.card-desc {
+  color: #D3DAD9;
+  opacity: 0.8;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Features List */
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+  color: #D3DAD9;
+  opacity: 0.85;
+  text-align: left;
+}
+
+/* Badge */
+.badge {
+  display: inline-block;
+  padding: 0.4rem 0.7rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.admin-badge {
+  background: rgba(113, 90, 90, 0.2); /* Muted Brown tint */
+  color: #715A5A;
+}
+
+.voter-badge {
+  background: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+}
+
+/* Highlight selected card */
+.access-card.selected {
+  border: 2px solid #715A5A; /* Muted Brown border */
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(113, 90, 90, 0.3);
+}
+
+/* Connect button container */
+.connect-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* Connect button */
+.connect-btn {
+  background: #715A5A; /* Muted Brown */
+  color: #fff;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(113, 90, 90, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.connect-btn:hover:not(.disabled) {
+  background: #5e4747;
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(113, 90, 90, 0.6);
+}
+
+/* Disabled state */
+.connect-btn.disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Connecting animation */
+.connect-btn:disabled {
+  animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.9; }
+}

@@ -1,0 +1,133 @@
+.voter-dashboard {
+  background: #37353E; /* Dark Charcoal */
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+  color: #D3DAD9; /* Light Gray text */
+}
+
+/* Header */
+.voter-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.voter-header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #D3DAD9; /* Light text */
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #D3DAD9;
+  opacity: 0.8;
+}
+
+/* Stats Section */
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background: #44444E; /* Soft Dark Gray */
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  width: 180px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.stat-card h2 {
+  font-size: 2rem;
+  color: #D3DAD9;
+  margin: 0;
+}
+
+.stat-card p {
+  margin: 0.5rem 0 0;
+  color: #D3DAD9;
+  opacity: 0.85;
+}
+
+/* Actions */
+.voter-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.action-card {
+  background: #44444E;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 260px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.action-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.blue { color: #D3DAD9; }
+.green { color: #715A5A; } /* Muted Brown */
+.orange { color: #D08B5B; } /* Optional accent */
+
+/* Buttons */
+.action-btn {
+  background: #715A5A; /* Muted Brown */
+  color: #D3DAD9;
+  padding: 0.5rem 1.2rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.action-btn:hover {
+  background: #8A6B6B;
+  transform: scale(1.05);
+}
+
+/* Recent Elections */
+.recent-elections {
+  background: #44444E;
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.recent-elections h2 {
+  margin-bottom: 1rem;
+  color: #D3DAD9;
+}
+
+.recent-elections ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #D3DAD9;
+}
+
+.recent-elections li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(211, 218, 217, 0.2);
+}

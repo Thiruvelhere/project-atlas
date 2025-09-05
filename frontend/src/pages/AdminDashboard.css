@@ -1,0 +1,230 @@
+/* 🌙 General */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #37353E; /* Dark Charcoal */
+  color: #D3DAD9; /* Light Gray text */
+}
+
+/* 🖥️ Dashboard container */
+.dashboard {
+  padding: 20px;
+  width: 100%;
+  margin: 0;
+}
+
+/* 🔹 Header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #715A5A; /* Muted Brown brand color */
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.badge {
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+}
+.access {
+  background: #22c55e;
+  color: #fff;
+}
+.role {
+  background: #44444E;
+  color: #fff;
+}
+.address {
+  font-size: 0.85rem;
+  color: #D3DAD9;
+  background: rgba(211, 218, 217, 0.1);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-family: monospace;
+}
+.disconnect-btn {
+  background: #715A5A;
+  color: #D3DAD9;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(113, 90, 90, 0.6);
+  transition: all 0.3s ease;
+}
+.disconnect-btn:hover {
+  background: #5e4747;
+  box-shadow: 0 0 15px rgba(113, 90, 90, 0.8);
+}
+
+/* 📌 Title */
+.dashboard-title {
+  margin-bottom: 20px;
+}
+.dashboard-title h2 {
+  font-size: 1.8rem;
+  color: #715A5A;
+}
+.dashboard-title p {
+  color: #D3DAD9;
+}
+
+/* 🧭 Tabs */
+.dashboard-tabs {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #44444E;
+}
+.dashboard-tabs button {
+  background: none;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: #D3DAD9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.dashboard-tabs button:hover {
+  color: #715A5A;
+  text-shadow: 0 0 8px rgba(113, 90, 90, 0.6);
+}
+.dashboard-tabs button.active {
+  border-bottom: 2px solid #715A5A;
+  color: #715A5A;
+}
+
+/* 🏗️ Cards grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/* 🔥 Stylish Cards */
+.card {
+  background: linear-gradient(145deg, #44444E, #37353E);
+  padding: 25px 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(113, 90, 90, 0.08), transparent 70%);
+  transform: rotate(25deg);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.card:hover::before {
+  opacity: 1;
+}
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6),
+    0 0 15px rgba(113, 90, 90, 0.3);
+}
+.card h3 {
+  font-size: 1.3rem;
+  color: #715A5A;
+  margin-bottom: 10px;
+}
+.card p {
+  font-size: 0.95rem;
+  color: #D3DAD9;
+  line-height: 1.4;
+}
+
+/* 🗳️ Recent elections */
+.recent-elections h3 {
+  margin-bottom: 15px;
+  color: #715A5A;
+}
+.election-card {
+  background: #44444E;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.election-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.status {
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+}
+.status.active {
+  background: #22c55e;
+}
+.status.upcoming {
+  background: #6b7280;
+}
+.meta {
+  color: #D3DAD9;
+  font-size: 0.85rem;
+  margin: 5px 0 10px;
+}
+
+/* 🔘 Buttons */
+.actions button {
+  margin-right: 8px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* 🎨 Button Variants */
+.end-btn {
+  background: #ef4444;
+  color: #fff;
+  box-shadow: 0 0 8px rgba(239, 68, 68, 0.5);
+}
+.end-btn:hover {
+  background: #dc2626;
+  box-shadow: 0 0 12px rgba(239, 68, 68, 0.7);
+}
+
+.start-btn {
+  background: #22c55e;
+  color: #fff;
+  box-shadow: 0 0 8px rgba(34, 197, 94, 0.5);
+}
+.start-btn:hover {
+  background: #16a34a;
+  box-shadow: 0 0 12px rgba(34, 197, 94, 0.7);
+}
+
+.view-btn {
+  background: #715A5A;
+  color: #fff;
+  box-shadow: 0 0 8px rgba(113, 90, 90, 0.4);
+}
+.view-btn:hover {
+  background: #5e4747;
+  box-shadow: 0 0 12px rgba(113, 90, 90, 0.7);
+}
